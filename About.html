@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<title>About</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+		<!-- external css downloaded from getbootstrap.com -->
+		<link href="css/bootstrap.css" rel="stylesheet">
+		<!-- external style sheet -->
+		<link href="css/external-About.css" rel="stylesheet" type="text/css">
+		<!-- javacript to validation allerts -->
+		<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<!-- Font Type from google-->
+		<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">  
+	    <!--SOCIAL MEDIA ICONS-->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<!-- Cookies used creator cookies from https://www.osano.com -->
+		<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
+	</head>
+
+	<body>
+
+		<!-- Navbar getbootstrap.com-->
+		<div class="container-fluid" id="navbar_id">
+			<div class="row" id="navigation"> 
+
+				<nav class="navbar navbar-expand-lg fixed-top navbar-dark" style="background-color: #000000;"  >
+					<a class="navbar-brand" href="index.html" id="navigation_text_logo"> <img src="photosIndex/logo.png" width="50" height="50" class="d-inline-block align-top" alt="logo club"></a> 	
+
+
+					<a class="navbar-brand" href="index.html" id="navigation_text_chess_society">NCI CHESS SOCIETY</a>
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+
+					<div class="collapse navbar-collapse" id="navbarSupportedContent">
+						<ul class="navbar-nav mr-auto">
+							<li class="nav-item">
+								<a class="nav-link" href="index.html" id="navigation_text_home">Home <span class="sr-only">(current)</span></a>
+							</li>
+							<li class="nav-item active">
+								<a class="nav-link" href="About.html" id="navigation_text_offers">About</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="training.html" id="navigation_text_taining">Training</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="JoinTheClub.html" id="navigationJoinTheClub">Join the club</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="contact.html" id="navigationContact">Contact</a>
+							</li>
+
+						</ul>
+						<form class="form-inline my-2 my-lg-0">
+							<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" >
+							<button class="btn btn-outline-success my-2 my-sm-0" type="submit" id="searchNavbar">Search</button>
+						</form>
+					</div>
+				</nav>
+
+			</div>
+		</div> 
+
+           <!-- image on the top page --> 
+		<div>
+			<h1 id="name_on_chessOnTopIndex"> NCI Chess Society </h1>
+			<img id ="chessOnTopIndex" src="photosAbout/AboutTopImage.jpg" alt="chess image"/>
+		</div> 
+
+		<!-- middle of the page consist 3 resposible columnes -->   
+
+		<div class="container-fluid" id="main_content_index">
+			<div class="row">
+				<div class="col-lg-3 col-md-4">
+					<!-- firts column-->   
+					<div class="photo1LeftColumn">
+						<img src="photosAbout/Chess1.jpg" alt="chess game"/>
+					</div>
+					<div class="photo2LeftColumn">
+						<img src="photosAbout/Screenshot.png" alt="lichess"/>
+					</div>
+				</div>
+				<!-- middle content-->
+				<div class="col-lg-6 col-md-4" id="welcome">    
+					<h2> Our Society</h2>
+					<p> Welcome to NCI Chess Society! We're open to new members with any level of skill, from beginners to pros' we cater to everyones needs. If you're new to chess we will happily teach you step-by-step!</p>
+					<p> Founded by a group of students interested in bringing the worlds oldest game to NCI, our goal has always been to share our love of chess with like-minded people and to teach it to new players. Chess is universally accessible, it transcends age, language and ethnicity making it a great way to meet and bond with people with different backgrounds.</p>
+					<div id="Games-and-Practise">
+						<h2>Tournament Games and Practice</h2>
+						<p>We host weekly tournament games and friendly practice matches on <a href="https://lichess.org/">Lichess.org</a> which is a great site for playing remotely with each other in these distanced times and also for practising against the computer.</p>
+					</div>
+				</div>
+				<!-- 3rd comlumn-->
+				<div class="col-lg-3 col-md-4">
+					<h2 id="newsletter">Sign up for our newsletter!</h2>
+					<p>Enter your email address below for all the latest gossip in the world of chess.</p>
+					<table>
+						<tr>
+							<td> <input class="membershipInput" id="signUpEmail" type="text" value="Enter email here..." onfocus="this.value=''" /></td>
+							<td><input type="button" value="submit" id="newsletterButton"></td>
+						</tr>
+					</table>
+					<div class="photo1RightColumn">
+						<img src="photosAbout/Chess2.jpg" alt="chess image"/>
+					</div>
+				</div>
+			</div>
+		</div>       
+
+		<!--  footer -->
+		<div class="container-fluid" id="footer">
+			<div class="row">
+				<div class="col-lg-4 col-md-3 col-sm-3" id="leftCol">
+					<h6>Social Media</h6>
+					<!-- Add font awesome icons -->
+                    <ul>
+					<li><a href="https://facebook.com/" class="fa fa-facebook"></a><a href="https://www.youtube.com/" class="fa fa-youtube"></a><a href="https://www.instagram.com/" class="fa fa-instagram"></a></li>
+					</ul>
+					
+				</div>
+				<div class="col-lg-4 col-md-6 col-sm-6" id="footerMid">
+					<h6>Quick Links</h6>
+					<ul class="footerLinkmenu">
+						<li><a href="index.html">Home</a></li>
+						<li><a href="About.html">About</a></li>
+						<li><a href="Training.html">Training</a></li>
+						<li><a href="JoinTheClub.html">Join The Club!</a></li>
+						<li><a href="contact.html">Contact</a></li>
+					</ul>
+				</div>
+				<div class="col-lg-4 col-md-3 col-sm-3" id="footerRight">
+					<h6>Copyright</h6>
+					<p>Copyright @ 2020 Dublin, Ireland.  All rights reserved <a href="validation-css/marek-index/W3CCSSValidatorresultsforexternal-Marek.css(CSSlevel3+SVG).htm" > <img src="http://jigsaw.w3.org/css-validator/images/vcss"  class="validation-photo" alt="validation photo"></a></p>
+				</div>
+			</div>
+		</div><!-- end footer -->
+        
+	
+		
+		<!-- cookies java script -->
+		<!-- Creator cookies from https://www.osano.com -->
+		<script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
+		<script src="js/cookies.js"></script>
+	
+		<!-- EXTERNAL JQUERRY SCRIPT TO VALIDATION SUBSCRIPTION -->
+		<script src="js/validation-subscription.js"></script>
+		
+		
+		<!-- Java script to JQUERRY and BOOTSTRAP SCRIPT-->
+	    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script> 
+
+
+	</body>
+
+
+</html>

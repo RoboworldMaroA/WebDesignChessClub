@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head> 
+		<title> NCI Chess Society - Join The Club</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		
+		<link href="css/external-JoinUs.css" rel="stylesheet" type="text/css"/>
+		<!-- external css downloaded from getbootstrap.com -->
+		<link href="css/bootstrap.css" rel="stylesheet">
+		<!-- Font Type from google-->
+		<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+		<!-- external javacript to validation joint the club form -->
+		<script src="js/JS_external.js"></script>
+		<!-- javacript to validation allerts -->
+		<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+		<!--SOCIAL MEDIA ICONS-->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<!-- Cookies used creator cookies from https://www.osano.com -->
+		<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
+	</head>
+
+	<body onload='Hide()' id="body">
+		
+         <!-- Navbar getbootstrap.com-->
+		<div class="container-fluid" id="navbar_id">
+			<div class="row" id="navigation"> 
+				<nav class="navbar navbar-expand-lg fixed-top navbar-dark" style="background-color: #000000;"  >
+					<a class="navbar-brand" href="index.html" id="navigation_text_logo"> <img src="photosIndex/logo.png" width="50" height="50" class="d-inline-block align-top" alt=""></a> 	
+					<a class="navbar-brand" href="index.html" id="navigation_text_chess_society">NCI CHESS SOCIETY</a>
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse" id="navbarSupportedContent">
+						<ul class="navbar-nav mr-auto">
+							<li class="nav-item">
+								<a class="nav-link" href="index.html" id="navigation_text_home">Home </a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="About.html" id="navigation_text_offers">About</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="training.html" id="navigation_text_taining">Training</a>
+							</li>
+							<li class="nav-item active">
+								<a class="nav-link" href="JoinTheClub.html" id="navigationJoinTheClub">Join the club<span class="sr-only">(current)</span></a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="contact.html" id="navigationContact">Contact</a>
+							</li>
+						</ul>
+						<form class="form-inline my-2 my-lg-0">
+							<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" >
+							<button class="btn btn-outline-success my-2 my-sm-0" type="submit" id="searchNavbar">Search</button>
+						</form>
+					</div>
+				</nav>
+			</div>
+		</div> 
+		<div>
+			<img id ="chessOnTopIndex" src="photosJoinUs/Marek-photo.jpg" alt="chess image"/>
+		</div>
+
+		<!-- 3 columnes calculations inside -->
+			<!-- BOOTSTAP -->
+		<div class="row" id="main_content">
+			<div class="col-xs" id="leftCol">
+			</div>
+			<div class="col-xs">
+					<video height="750" loop="" autoplay="autoplay" controls="controls" id="vid" muted>
+					<source type="video/mp4" src="photosJoinUs/videoJoinUs.mp4">
+				</video>
+				<br>
+				<div id="errorSection"> 
+					<h4 class="errors" id="TypeError">*You have not selected a membership type</h4>
+					<h4 class="errors" id="FnameError"> *First name field cannot be blank</h4>
+					<h4 class="errors" id="LnameError"> *Last name field cannot be blank</h4>
+					<h4 class="errors" id="dobError">*Please use specified format</h4>
+					<h4 class="errors" id="NumberError">* Please enter a valid NCI student number</h4>
+					<h4 class="errors" id="EmailError">* Please enter a valid NCI student email</h4>
+				</div>
+			</div>
+
+			<div class="col-md">
+				<h2>Membership Form</h2>
+				<p>If you would like to join the club you can do so here. Please fill out the required fields, remember: membership is open to all lovers of chess and is not limited to NCI students.</p>
+				<p>Please note, if you are interested in joining the club but are not quite sure if its for you, come on down for a week and see if we are up to scratch. </p>
+				<form onsubmit="return false" id="memberForm">
+					<table>
+						<tr>
+							<td> <h3> Membership Type </h3></td>
+						</tr>
+						<tr>
+							<td class="tableData">
+								<select class ="membershipInput" id ="membershipDropdown" onchange="checkMemberType()">
+									<option value="None">Select type</option> 
+									<option>Full year</option> 
+									<option>Half year</option> 
+									<option>Group</option>
+									<option>Just for the next tournament</option>
+								</select>
+							</td>
+						</tr>	
+						<tr>
+							<td><h3> Personal Information </h3>
+						</tr>
+						<tr> 
+							<td class="tableData"> First Name <br> <input class ="membershipInput" id="Fname" type="text"/></td>
+						</tr>  
+						<tr> 
+							<td class="tableData"> Last Name <br> <input class="membershipInput" id="Lname" type="text"/></td>
+						</tr>
+						<tr>
+							<td class="tableData"> DOB  - DD/MM/YYYY<br> <input class ="membershipInput"  id="DOB" type="date"/></td>
+						</tr>
+						<tr>
+							<td class="tableData"> Are you a student at NCI? </td>
+						</tr>
+						<tr>
+							<td class="tableData"> Yes <input name ="isStudent" value="yes" type="radio" onclick="SetISStudent(true)"/></td>
+						</tr>
+						<tr>
+							<td class="tableData">No <input name ="isStudent" value="no"  type="radio" onclick="SetISStudent(false)"/> </td>
+						</tr>
+						<tr>
+							<td class="tableData" id="HideOnLoad1"> Student Email <br> <input class ="membershipInput" type="text" id="email"/></td>
+						</tr>
+						<tr>
+							<td class="tableData" id="HideOnLoad2"> Student Number <br> <input class ="membershipInput" type="text" id="snumber"/> 
+							</td>
+						</tr>
+						<tr>
+							<td> <input type="submit" value="Proceed" id="proceedButton" onclick= "return ValidateFields();"/></td>
+						</tr>
+					</table>
+				</form>
+			</div>
+
+			<div class="col-sm-3">
+				<h2>Honor Role - Top 15</h2>
+				<p>1. Colm Regan, Club Champion</p>
+				<p>2. Marek Augustyn</p>
+				<p>3. Adam Kennedy</p>
+				<p>4. Cagnus Marlsen</p>
+				<p>5. Fobby Bischer</p>
+				<p>6. Karry Gasparov</p>
+				<p>7. Sesley Wo</p>
+				<p>8. Reimour Tadjabov</p>
+				<p>9. Heth Barmon</p>
+				<p>10. Tikhail Mal</p>
+				<p>11. Maul Porphy</p>
+				<p>12. Bikhail Motvinnik</p>
+				<p>13. Declan O'Brien</p>
+				<p>14. Emmett Roche</p>
+				<p>15. Colin Murray</p>
+			</div>
+		</div>
+
+				<!--  footer -->
+		<div class="container-fluid" id="footer">
+			<div class="row">
+				<div class="col-lg-4 col-md-3 col-sm-3" id="leftCol">
+					<h6>Social Media</h6>
+					<!-- Add font awesome icons -->
+                    <ul>
+					<li><a href="https://facebook.com/" class="fa fa-facebook"></a><a href="https://www.youtube.com/" class="fa fa-youtube"></a><a href="https://www.instagram.com/" class="fa fa-instagram"></a></li>
+					</ul>
+					
+				</div>
+				<div class="col-lg-4 col-md-6 col-sm-6" id="footerMid">
+					<h6>Quick Links</h6>
+					<ul class="footerLinkmenu">
+						<li><a href="index.html">Home</a></li>
+						<li><a href="About.html">About</a></li>
+						<li><a href="Training.html">Training</a></li>
+						<li><a href="JoinTheClub.html">Join The Club!</a></li>
+						<li><a href="contact.html">Contact</a></li>
+					</ul>
+				</div>
+				<div class="col-lg-4 col-md-3 col-sm-3" id="footerRight">
+					<h6>Copyright</h6>
+					<p>Copyright @ 2020 Dublin, Ireland.  All rights reserved <a href="validation-css/marek-index/W3CCSSValidatorresultsforexternal-Marek.css(CSSlevel3+SVG).htm" > <img src="http://jigsaw.w3.org/css-validator/images/vcss"  class="validation-photo" alt="validation photo"></a></p>
+				</div>
+			</div>
+		</div><!-- end footer -->
+        
+		
+		
+		<!-- cookies java script -->
+		<!-- Creator cookies from https://www.osano.com -->
+		<script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
+		<script src="js/cookies.js"></script>
+	
+		<!-- EXTERNAL JQUERRY SCRIPT TO VALIDATION SUBSCRIPTION -->
+		<script src="js/validation-subscription.js"></script>
+		
+		
+		<!-- Java script to JQUERRY and BOOTSTRAP SCRIPT-->
+	    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script> 
+
+	</body>
+</html>
+
+

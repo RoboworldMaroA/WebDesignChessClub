@@ -1,0 +1,226 @@
+/* photo on top*/
+#chessOnTopIndex{
+	
+	width:100%;
+    height: Auto;
+}
+
+
+/* */
+#introduction{
+	color: white;
+	margin-top: 50px;
+	padding-left:140px;
+	padding-right:150px;
+	padding-bottom:30px;
+}
+
+#introduction h1{
+	font-size: 1.9em;
+}
+
+
+/* modification navbar */
+
+#searchNavbar{
+	color: grey;
+}
+
+#navigation {
+    background-color: #1A1110;
+    color: azure
+}
+
+body,td,th { 
+	color: #00020A;
+	background-color: #000000;}
+
+
+.card{
+	object-position: center;
+}
+
+
+
+/* training levels*/
+#training-levels{
+    padding-left: 8%;
+    margin-bottom: 5%;
+}
+
+#beginner-level{
+    margin-right: 0px;
+    margin-bottom: 5px;
+}
+
+#interemdial-level{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#advanced-level{
+    margin-top: 5px;
+    margin-right: 0px;
+}
+
+#main_content {
+    background-color:#000000;
+    margin-top: 25px;
+    color: aliceblue
+    }
+/* efect hover on photos*/
+
+#training-levels img {
+    margin-bottom:2%; 
+    transition: all 2s, transform .5s, box-shadow .5s; 
+}
+
+#training-levels img:hover {
+    box-shadow: 6px 6px 20px rgba(0,0,0,.6);
+    transform: scale(1.02)
+}
+
+
+
+
+
+/* videos with training */
+
+#main_content_training {
+    padding-left: 5%;
+    background-color:#000000;
+    color: aliceblue
+}
+
+#video-beginners{
+    object-position: center; 
+    
+    
+}
+#video-beginners h2{
+    text-align: center; 
+    
+    
+}
+
+
+#video-advanced h2{
+    text-align: center; 
+    
+    
+}
+
+#video1{
+    object-position: center;    
+}
+
+#video2{
+    object-position: center;    
+}
+
+#navigation_text {
+    color: aliceblue;
+    
+    
+}
+
+a {
+    color: aliceblue
+}
+   
+#content-under-video{
+	color:white;
+}
+
+
+
+/* footer */
+
+#footer{
+    padding-top: 5px;
+	margin-top: 30px;
+	margin-left: 30px;
+	text-align: justify;
+	float: right;
+	background-color:#0f0504;
+	font-size:0.7em;
+	color:#737373;
+  
+}
+
+#footerMid{
+	padding-left: 50px;
+    
+
+}
+
+#footerRight{
+   
+   padding-left: 50px;
+
+}
+#footerRight p{
+   
+   padding-top: 20px;
+
+}
+	
+#footer h6{ 
+    padding-left: 30px;
+	text-align: center;
+	color: white;
+	font-size:1.0em;
+	text-transform:uppercase;
+	margin-top:2px;
+	letter-spacing:2px;
+}
+
+
+#footer li{
+    text-align: center;
+	list-style-type: none;
+}
+
+
+/* social media */
+.fa {
+  margin-right: 15px;
+  padding: 10px;
+  font-size: 1px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+  margin-right: 10px;
+  margin-top: 20px;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+  margin-right: 10px;
+  margin-top: 20px;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+  margin-top: 20px;
+}
+
+
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+
+
+
+
+

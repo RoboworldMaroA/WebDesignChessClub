@@ -1,0 +1,60 @@
+body,td,th{
+	color:#f1faee;
+	background:#457b9d;
+
+}
+#chessOnTopIndex{
+	
+	width:100%;
+    height: Auto;
+}
+#searchNavbar{
+	color: grey;
+}
+#leftCol{
+	padding-left: 50px;
+}
+#news {
+	padding-top:150px;
+	font-size:22px;
+}
+#newsletter {
+	padding-top:100px;
+	font-size:22px;
+}
+#welcome {
+	padding-top:100px;
+}
+#main_content_index {
+    background-color:#457b9d;
+    }
+#caruzela {
+    background-color: #000000;
+    margin-top: 65px;
+    margin-bottom: 65px;
+}
+#footer1{
+    padding-top: 5px;
+	margin-top: 30px;
+	text-align: justify;
+	float: left;
+	background-color:#457b9d;
+	font-size:0.7em;
+	color:#f1faee;
+}
+#footerMid{
+    padding-left: 30px;
+}
+.footer h6{ 
+    padding-left : 45px;
+	text-align: center;
+	color: white;
+	font-size:1.0em;
+	text-transform:uppercase;
+	margin-top:2px;
+	letter-spacing:2px;
+}
+.footer li{
+    text-align: center;
+	list-style-type: none;
+}

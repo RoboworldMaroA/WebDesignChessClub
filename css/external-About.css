@@ -1,0 +1,204 @@
+
+#chessOnTopIndex{
+	
+	width:100%;
+    height: Auto;
+}
+
+#leftCol{
+	padding-left: 50px;
+}
+
+
+#searchNavbar{
+	color: grey;
+}
+
+body,td,th { 
+	color: #00020A;
+	background-color: #000000;}
+
+
+
+.photo1LeftColumn{
+	margin-top: 60px;
+	
+	
+}
+
+.photo2LeftColumn{
+	margin-top: 60px;
+	
+	
+}
+.photo1RightColumn{
+	margin-top: 60px;
+	
+	
+}
+
+
+.photo1LeftColumn img{
+	width:100%
+
+}
+
+.photo2LeftColumn img{
+	width:100%
+
+}
+
+.photo1RightColumn img{
+	width:100%
+
+}
+	#news {
+	padding-top:150px;
+	font-size:22px;
+	
+}
+
+#newsletter {
+	padding-top:100px;
+	font-size:22px;
+}
+
+#welcome {
+	padding-top:50px;
+}
+
+#navigation {
+    background-color: #1A1110;
+    color: azure
+}
+
+
+#main_content {
+    background-color:#000000;
+    margin-top: 25px;
+    color: aliceblue
+    }
+
+
+
+#main_content_index {
+    
+    background-color:#000000;
+    color: aliceblue
+    }
+
+
+#Games-and-Practise{
+    margin-top: 50px;
+}
+
+
+
+
+#navigation_text {
+    color: aliceblue;
+    
+    
+}
+
+
+a {
+    color: aliceblue
+    
+    
+}
+
+
+
+   
+
+
+/* footer */
+
+#footer{
+    padding-top: 5px;
+	margin-top: 30px;
+	margin-left: 30px;
+	text-align: justify;
+	float: right;
+	background-color:#0f0504;
+	font-size:0.7em;
+	color:#737373;
+  
+}
+
+#footerMid{
+	padding-left: 50px;
+    
+
+}
+
+#footerRight{
+   
+   padding-left: 50px;
+
+}
+#footerRight p{
+   
+   padding-top: 20px;
+
+}
+	
+#footer h6{ 
+    padding-left: 30px;
+	text-align: center;
+	color: white;
+	font-size:1.0em;
+	text-transform:uppercase;
+	margin-top:2px;
+	letter-spacing:2px;
+}
+
+
+#footer li{
+    text-align: center;
+	list-style-type: none;
+}
+
+
+/* social media */
+.fa {
+  margin-right: 15px;
+  padding: 10px;
+  font-size: 1px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+  margin-right: 10px;
+  margin-top: 20px;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+  margin-right: 10px;
+  margin-top: 20px;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+  margin-top: 20px;
+}
+
+
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+
+
+
+
